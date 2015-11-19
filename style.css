@@ -22,7 +22,6 @@ body {
 }
 .ui-sortable li.ui-state-default { 
 	margin: 0; 
-	height: 45px;
 	line-height: 48px;
 	font-size: 1.4em; 
 	color: #fff;
@@ -42,7 +41,7 @@ body {
 	text-shadow: -1px -1px 0px rgba(0,0,0,.5);
 	font-size: 1.1em;
 	position: relative;
-	cursor: pointer;
+	cursor: move;
 }
 .ui-sortable li.ui-state-default:first-child {
 	border-top: 0; 
@@ -57,7 +56,7 @@ body {
 	width: 344px;
 	background: #ccc;
 }
-.ui-sortable li.ui-state-default:after {
+.ui-sortable li.ui-state-default .icon:after {
 	content: "\f0c9";
 	display: inline-block;
 	font-family: "FontAwesome";
@@ -68,5 +67,15 @@ body {
 	line-height: 35px;
 	color: rgba(255,255,255,.2);
 	text-shadow: 0px 0px 0px rgba(0,0,0,0);
-	cursor: move;
+	cursor: pointer;
+}
+.ui-sortable .fields-container {
+	padding: 5px 15px;
+	display: none;
+}
+.ui-sortable li.ui-state-default .fields-container input {
+	width: 97%;
+	border: solid 1px #6D7078;
+	padding: 5px 0 5px 5px;
+	border-radius: 3px;
 }
